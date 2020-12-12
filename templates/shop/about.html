@@ -1,0 +1,113 @@
+{% extends 'shop/basic.html' %}
+{% block title%} About Us - Lloyds Bakery{% endblock %}
+{% block css%}
+body {
+/*background: url(https://d5a9s4m4.stackpathcdn.com/wp-content/uploads/2016/03/11638956-seamless-flower-paisley-design-background-Stock-Vector-pattern-350x350.jpg);*/
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+.column {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 8px;
+}
+.about-section {
+padding: 50px;
+text-align: center;
+background-color: #f0e8e2;
+color: white;
+}
+.container {
+padding: 0 16px;
+}
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+.title {
+color: black;
+}
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+.button:hover {
+background-color: #555;
+}
+@media screen and (max-width: 650px) {
+.column {
+width: 100%;
+display: block;
+}
+}
+{% endblock %}
+{% block body %}
+<div class="about-section">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, sans-serif;"><strong>About Us</strong></h1>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">Lloyds Bakery is one of only a handful few enduring Craft Bakeries in India.</p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">We have assembled our notoriety on consolidating great quality conventional heating with great incentive for cash...</p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">We offer our clients a full scope of breads, forte breads, morning merchandise, cakes and baked goods.</p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">Our pastry specialists work during that time with the goal that the portion of bread you purchase toward the beginning of the day is crisp out of the stove!</p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">Our manufacturers are based in India.Our crates for conveyance were planned vigorously by best box creators and we likewise got it overlaid inside so cakes are taken care of with most extreme consideration. Afterall we need to make your event beneficial.
+    </p>
+    <p> </p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">Lloyds Bakery will happily take you through the range.</p>
+    <p> </p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, sans-serif;">So arrange our all around structured and heavenly cakes and be the purpose of fascination for your festival!</p>
+</div>
+<h1 style=" text-align:center;font-family: 'Times New Roman', Times, sans-serif;color: #a52a2a; text-decoration: underline;"><strong>Our Team</strong></h1>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="" alt="" style="width:100%">
+            <div class="container">
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;color:#a52a2a;">Prantik Mukherjee</h2>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;color:"class="title">Founder & Backend Developer</p>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;">PM20@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="" alt="" style="width:100%">
+            <div class="container">
+                <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#a52a2a;">Astik Karmakar</h2>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;"class="title">Art & Content Devoloper</p>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;">AK20@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="" alt="" style="width:100%">
+            <div class="container">
+                <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#a52a2a;">Pushpal Sar</h2>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;"class="title">Frontend Developer</p>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;">PS20@gmail.com</p>
+                <p><button class="button ">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
